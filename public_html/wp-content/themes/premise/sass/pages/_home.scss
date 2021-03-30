@@ -1,12 +1,114 @@
-.front{
-    background: $blue;
-    // margin-bottom: 30px;
+body {
+    background-color: $blue;
+}
+.front {
 
-    .container{
+    margin: auto;
+    background-color: $white;
+    width: 1110px;
+    padding: 20px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    text-align: center;
 
-        // background: $white;
-        // width: 1110px;
-        // height: 986px;
-        // margin-bottom: 90px;
+    .headline{
+
+        font-family: $body-font;
+        font-style: normal;
+        font-size: 72px;
+        line-height: 85px;
+        font-weight: normal;
+        color: $dark-blue;
+        margin-bottom: 10px;
     }
+    
+    .text{
+
+        font-family: $body-font;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 30px;
+        line-height: 36px;
+        color: $dark-blue;
+        margin-bottom: 90px;
+    }
+
+    .image{
+
+        margin-bottom: 20px;
+        img{
+            width: 166px;
+            height: 135px;
+        }
+        
+    }
+
+    ul{
+        li{
+
+            list-style-type: none;
+        }
+    }
+
+    .form.content{
+
+        display: flex;
+        align-items: center;
+        text-align: center;
+
+    }
+
+    .gform_body{
+        .ginput_container {
+            textarea{
+
+                input::placeholder{
+                    color: #1AA5F4;
+                }
+            }
+        }
+    }
+
+    .form-container{
+        .form{
+            label{
+                color: $dark-blue;
+                text-align: left;
+                font-family: $body-font;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 21px;
+                text-transform: uppercase;
+
+                + input[type="text"]{
+                    height: 51px;
+                    background-color: #EAF7FC;
+                    border: 2px solid #1AA5F4;
+                    box-sizing: border-box;
+                    border-radius: 20px;
+                    padding: 2px 10px;
+                    width: 100%;
+                }
+
+                .ginput_container {
+                    .ginput_container_textarea{
+    
+                        input::placeholder{
+                            color: #1AA5F4;
+                        }
+                    }
+                }
+            }
+
+            
+        }
+
+        
+    }
+
+
+
+
+
 }

@@ -10,6 +10,9 @@ get_header(); ?>
     <div class = "front">
         <div class = "container">
             <div>
+                <div class="image">
+                    <img alt ="logo" src="<?php bloginfo('template_directory'); ?>/img/logo.png">
+                </div>
                 <h1 class="headline">PushCal</h2>
                 <p class="text">Tagline lorem ipsum dolor sit amet</p>
             </div>
@@ -23,9 +26,6 @@ get_header(); ?>
                     </div>
                 </div>
             </section>
-            <div class="buttons">
-                <a href="<?php bloginfo('url'); ?>/sign-up/" class="button pink">SUBMIT</a>
-            </div>
         </div>
     </div>
 
