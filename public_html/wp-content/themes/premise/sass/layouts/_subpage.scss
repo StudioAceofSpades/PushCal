@@ -1,0 +1,85 @@
+body {
+    background-color: $blue;
+}
+.subpage {
+
+    margin: auto;
+    background-color: $white;
+    width: 1110px;
+    padding: 20px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    
+
+    
+
+    h1{
+        font-family: $body-font;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        color: $dark-blue;
+        margin-bottom: 10px;
+        line-height: 130%;
+    }
+
+    h2{
+
+        font-family: Rubik;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 30px;
+        line-height: 130%;
+        color: $dark-blue;
+        margin-bottom: 10px;
+        line-height: 130%;
+    }
+
+    p{
+
+        font-family: Rubik;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 1;
+        color: $dark-blue;
+        margin-bottom: 20px;
+        line-height: 140%;
+
+    }
+
+    h3{
+        font-family: Rubik;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 150%;
+        text-transform: uppercase;
+        color: $dark-blue;
+        margin-bottom: 20px;
+        
+    }
+
+    h4{
+
+        font-family: Rubik;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 150%;
+        color: $dark-blue;
+    }
+
+    h5,h6 {
+
+        font-family: Rubik;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 150%;
+        color: $dark-blue;
+        margin-bottom: 10px;
+    }
+
+  
+}
