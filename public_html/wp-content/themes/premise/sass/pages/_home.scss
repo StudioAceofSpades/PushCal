@@ -1,11 +1,16 @@
 body {
     background-color: $blue;
 }
+#home{
+    padding-top: 47px;
+}
 .front {
 
     margin: auto;
     background-color: $white;
     width: 1110px;
+    // height: auto;
+    // width: auto;
     padding: 20px;
     border-radius: 20px;
     margin-bottom: 30px;
@@ -103,8 +108,13 @@ body {
 
             
         }
+        input[type="submit"] {
 
-        
+            &:hover{
+                background-color: $dark-gray;
+            }
+
+        }
     }
 
 

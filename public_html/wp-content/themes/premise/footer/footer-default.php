@@ -4,9 +4,20 @@
 
 <footer class="footer">
     <div class="links">
-        <a href="#" class="link1">Privacy Policy</a>
-        <a href="#" class="link1">Terms & Conditions</a>
-    </div>
+        <?php if(have_rows('links','options')): ?>
+            <nav class="footer-nav">
+                <ul>
+                    <?php while(have_rows('links','options')): the_row(); ?>
+                        <?php if($link = get_sub_field('link')): ?>
+                        <li>
+                            <a href="<?php echo $link['url']; ?>" target="<?php echo $link['target']; ?>"><?php echo $link['title']; ?></a>
+                        </li>
+                        <?php endif; ?>
+                    <?php endwhile; ?>
+                </ul>
+            </nav>
+        <?php endif; ?>
+    </div> 
 </footer>
 </body>
 <?php wp_footer(); ?>

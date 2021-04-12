@@ -2,19 +2,24 @@
 if (__FILE__ == $_SERVER['SCRIPT_FILENAME']) { die(); }
 if (CFCT_DEBUG) { cfct_banner(__FILE__); }
 
-get_header(); ?>
+get_header();
+ ?>
 
 <div id="home">
-
-    <?php include(get_stylesheet_directory() . '/parts/hero.php'); ?>
     <div class = "front">
         <div class = "container">
             <div>
-                <div class="image">
-                    <img alt ="logo" src="<?php bloginfo('template_directory'); ?>/img/logo.png">
-                </div>
-                <h1 class="headline">PushCal</h2>
-                <p class="text">Tagline lorem ipsum dolor sit amet</p>
+                <?php if($image = get_field('logo_image')): ?>
+                    <div class="image">
+                        <img alt ="logo" src="<?php echo $image['url']; ?>">
+                    </div>
+                <?php endif; ?>
+                <?php if($header = get_field('header')): ?>
+                    <h1 class="headline"><?php echo $header; ?></h2>
+                <?php endif; ?>
+                <?php if($tagline = get_field('tagline')): ?>
+                    <p class="text"><?php echo $tagline; ?></p>
+                <?php endif; ?>
             </div>
             <section class="form-container">
                 <div class="container">

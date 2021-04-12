@@ -1,27 +1,35 @@
 .footer{
 
-    // color: $white;
     text-transform: uppercase;
 
     .links{
-        // color: $white;
         font-family: Rubik;
-        
-        // display: flex;
         margin: auto;
         align-items: center;
         text-align: center;
-        
-        .link1{
+
+        .footer-nav{
             color: $white;
             padding: 20px;
-            font-weight: 500;
-            font-size: 18px;
             text-decoration: none;
+
+            a, a:visited{
+                color: $white;
+            }
+
+            li{
+                display: inline-block;
+                color: $white;
+                padding-left: 40px;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 21.33px;
+            }
          
             a:hover {
 
                 color: $white;
+                text-decoration: none;
             }
         }
     }
