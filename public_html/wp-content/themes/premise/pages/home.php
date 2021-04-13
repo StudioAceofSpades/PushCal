@@ -6,8 +6,8 @@ get_header();
  ?>
 
 <div id="home">
-    <div class = "front">
-        <div class = "container">
+    <div class = "container">
+        <div class = "front">
             <div>
                 <?php if($image = get_field('logo_image')): ?>
                     <div class="image">
