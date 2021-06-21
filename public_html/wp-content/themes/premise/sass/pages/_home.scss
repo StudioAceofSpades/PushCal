@@ -1,79 +1,47 @@
-body {
-    background-color: $blue;
-}
-#home{
-    padding-top: 47px;
+#home {
+    padding-top: 50px;
 }
 .front {
-
-    margin: auto;
     background-color: $white;
-    // width: 1110px;
-    // height: auto;
-    // width: auto;
     padding: 20px;
     border-radius: 20px;
-    margin-bottom: 30px;
+    margin: 0 0 30px;
     text-align: center;
 
     .headline{
-
-        font-family: $body-font;
-        font-style: normal;
         font-size: 72px;
         line-height: 85px;
-        font-weight: normal;
         color: $dark-blue;
-        margin-bottom: 10px;
+        margin: 0 0 10px;
     }
-    
     .text{
-
-        font-family: $body-font;
-        font-style: normal;
         font-weight: 300;
         font-size: 30px;
         line-height: 36px;
         color: $dark-blue;
-        margin-bottom: 90px;
+        margin: 0 0 30px;
     }
+    .image {
+        margin: 0 0 30px;
 
-    .image{
-
-        margin-bottom: 20px;
-        img{
-            width: 166px;
-            height: 135px;
+        img {
+            width: 160px;
         }
-        
     }
-
-    ul{
+    ul {
         li{
-
             list-style-type: none;
         }
     }
-
-    .form.content{
-
-        display: flex;
-        align-items: center;
-        text-align: center;
-
-    }
-
     .gform_body{
         .ginput_container {
             textarea{
-
                 input::placeholder{
                     color: #1AA5F4;
                 }
             }
         }
     }
-
     .form-container{
         .form{
             label{
@@ -98,27 +66,29 @@ body {
 
                 .ginput_container {
                     .ginput_container_textarea{
-    
                         input::placeholder{
                             color: #1AA5F4;
                         }
                     }
                 }
             }
-
-            
         }
         input[type="submit"] {
-
             &:hover{
                 background-color: $dark-gray;
             }
-
         }
     }
-
-
-
-
-
+}
+@include media-breakpoint-down(sm) {
+    .front {
+        .headline {
+            font-size: 42px;
+            line-height: 1;
+        }
+        .text {
+            font-size: 21px;
+            line-height: 1;
+        }
+    }
 }

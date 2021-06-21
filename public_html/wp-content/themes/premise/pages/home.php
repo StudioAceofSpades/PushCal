@@ -9,7 +9,7 @@ get_header();
     <div class = "container">
         <div class = "front">
             <div>
-                <?php if($image = get_field('logo_image')): ?>
+                <?php if($image = get_field('logo_image','options')): ?>
                     <div class="image">
                         <img alt ="logo" src="<?php echo $image['url']; ?>">
                     </div>
